@@ -1,0 +1,48 @@
+Commands :-
+1]After cloning the repository just do "npm install" to get all the dependencies.
+2]Starting our application :- npm run dev , then go on your browser at localhost:3000 
+3]IMP :- 1] You should have "Metamask" Extension installed on your machine.
+         2] Paste your Metamask Account Pneumonic at :- ethereum > deploy.js (Line:6)
+         3] Now whole project will be deployed from your account.
+
+File Structure :-
+1] Folder "ethereum"     :- It contains all the code related to "Smart Contract".
+2] Folder "test"         :- It contains a single file in which we have done testing our "Smart Contract".
+3] Folder "components"   :- It contains all the "React-Components" will we are going to use at different places.
+4] Folder "pages"        :- It contains all the pages of our application. A single page is nothing but a "React-Component". 
+5] Files "server.js" and "routes.js" are used for setting dynamic routes of our application.
+
+A] ethereum :-
+1]contracts > Campaign.sol    :- It contains our "Smart Contract" source code. Its the core of our application.
+2]compile.js                  :- It compiles our smart contract.
+3]deploy.js                   :- It deploys our smart contract.
+4]build                       :- It stores our compiled smart contract.
+5]campaign.js                 :- It is for creating instance of "Campaign" smart contract. 
+6]factory.js                  :- It is for creating instance of "CampaignFactory" smart contract.                        (Note : We have created these two instances for interaction purpose.)
+7]web3.js                     :- It is for making use of our desired web3 version while working with metamask.
+
+B] components :-
+1] Header.js                  :- It is the header which is present on our each page.
+2] Layout.js                  :- It is the whole layout which we want on our each page. (Header.js is included in this file.)
+3] ContributeForm.js          :- It allows user to contribute in a campaign. (Used in --> pages > show.js)
+4] RequestRow.js              :- It helps us to render "spending requests" associated with particular campaign, one request at a time. ( Used in ---> pages > requests > index.js)
+
+C] pages :-
+1] Home Page of our application                             :-  pages > index.js
+2] Now you can view details of a particular campaign        :-  pages > show.js
+3} Or you can create your own campaign                      :-  pages > new.js
+4] While viewing particular campaign you can also view all  :-  pages > requests > index.js
+   the spending requests associated with it.
+5] While viewing particular campaign you can also create a  :-  pages > requests > new.js
+   spending request. (Only if you are manager of campaign)
+
+
+Editing Smart Contract :-
+1] Do whatever changes you want in our "Smart Contract" ---> ethereum > contracts > Campaign.sol
+2] Compile the updated contract. ---> ethereum > compile.js  (Command :- node compile.js)
+3] Deploy the contract ---> ethereum > deploy.js (Command :- node deploy.js)
+4] As soon the contract is deployed you will get two addresses in terminal : 1]Account from which deployment is done.
+                                                                             2]Location at which contract is deployed on Blockchain.
+5] Copy whole thing and paste it in "Address" file just to keep record.
+6] Now take the address our deployed contract and paste it at line:7 in "ethereum > factory.js".
+7] Restart our server.
