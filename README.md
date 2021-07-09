@@ -3,7 +3,7 @@ It is a crowd funding application based on "Blockchain Technology".
 "Smart Contract" is the core of this application.  
 It is designed for students who have project ideas but doesn't have enough funds.  
   
-Working :-  
+## Working :-  
 1]"Idea Person" can create a campaign. He can set some minimum contribution for his campaign.  
 2]One who creates a campaign, becomes 'manager' of the campaign.  
 3]Other users can donate money to his campaign. User who contributes becomes 'approvers' of the campaign.    
@@ -12,7 +12,7 @@ Working :-
 6]When this request gets approval from more than 50% of 'approvers' only then 'manager' can fanalize the request.  
 7]After 'manager' finalizes the request, money will be sent to the address which is specified in the request itself.  
   
-Advantage :-  
+## Advantage :-  
 1]There are malicious people who have no intent to create a project or startup.  
 2]They just creates campaigns on such crowdfunding applications and misuses the money.  
 3]Here they can't do so.  
