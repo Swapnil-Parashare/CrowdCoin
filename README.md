@@ -20,5 +20,19 @@ It is designed for students who have project ideas but doesn't have enough funds
 5]As spending request requires approvals, if contributers observes some suspicious activity, they will not approve his request.  
 6]Here contributers have total control over the money they can see were the money is going and can see weather the recipient is geniune or not.  
     
-Note : Please have a look at "ProjectFlow" file to get better understanding of the project and its coding stuff.  
+## Technologies Used
+
+- Node.js
+- Web3.js
+- Solidity
+- Ganache
+- Mocha
+- Metamask
+- Infura
+- Remix-IDE
+- React.js
+- Next.js  
+
+### Note 
+Please have a look at "ProjectFlow" file to get better understanding of the project and its coding stuff.  
       
